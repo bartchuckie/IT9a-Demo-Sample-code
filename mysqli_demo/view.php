@@ -6,4 +6,6 @@ $result = $conn->query("SELECT * FROM students");
 while ($row = $result->fetch_assoc()) {
     echo $row['id'] . " - " . $row['fullname'] . " - " . $row['course'] . "<br>";
 }
+
+$conn->close();
 ?>
