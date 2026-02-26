@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //exit();
     
     if ($stmt->execute()) {
-        header("Location: view.php");
+        header("Location: form.html");
         exit();
     } else {
         echo "Error: " . $stmt->error;
